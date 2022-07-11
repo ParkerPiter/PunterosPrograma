@@ -162,16 +162,30 @@ void resta(int *una_resta){
 	//Variables a restar
 	int num1, num2, resp= *una_resta;
 	char n1[5], n2[5];
+	resta:
 	printf("Ingrese un numero entero a restar: ");
 	scanf("%s", n1);
 	n=validar_numero(n1);
 	numerovalido=atoi(n1);//Llamada al metodo para la validación
+	if(numerovalido == 0){
+		printf("El numero ingresado no es valido, por favor ingrese un numero mayor a 0 \n");
+		system("pause");
+		system("cls");
+		goto resta;
+	}
 	num1 = numerovalido;
 	
+	resta2:
 	printf("Ingrese un otro numero entero a restar: ");
 	scanf("%s", n2);
 	n=validar_numero(n2);
 	numerovalido=atoi(n2);//Llamada al metodo para la validación
+	if(numerovalido == 0){
+		printf("El numero ingresado no es valido, por favor ingrese un numero mayor a 0 \n");
+		system("pause");
+		system("cls");
+		goto resta2;
+	}
 	num2 = numerovalido;
 	
 	//Lo manda a la dirección asignada y saca la operación
@@ -184,16 +198,30 @@ void division(int *una_division){
 	//Variables a divir
 	int num1, num2, resp = *una_division;
 	char n1[5], n2[5];
+	division:
 	printf("Ingrese un numero entero a dividir: ");
 	scanf("%s", n1);
 	n=validar_numero(n1);
 	numerovalido=atoi(n1);//Llamada al metodo para la validación
+	if(numerovalido == 0){
+		printf("El numero ingresado no es valido, por favor ingrese un numero mayor a 0 \n");
+		system("pause");
+		system("cls");
+		goto division;
+	}
 	num1 = numerovalido;
 	
+	division2:
 	printf("Ingrese un otro numero entero a dividir: ");
 	scanf("%s", n2);
 	n=validar_numero(n2);
 	numerovalido=atoi(n2);//Llamada al metodo para la validación
+	if(numerovalido == 0){
+		printf("El numero ingresado no es valido, por favor ingrese un numero mayor a 0 \n");
+		system("pause");
+		system("cls");
+		goto division2;
+	}
 	num2 = numerovalido;
 	
 	//Lo manda a la dirección asignada y saca la operación
@@ -206,16 +234,30 @@ void resto(int *un_rest){
 	//Variables a sacar el resto
 	int num1, num2, resp = *un_rest;
 	char n1[5], n2[5];
+	modulo:
 	printf("Ingrese un numero entero para sacar su resto: ");
 	scanf("%s", n1);
 	n=validar_numero(n1);
 	numerovalido=atoi(n1);//Llamada al metodo para la validación
+	if(numerovalido == 0){
+		printf("El numero ingresado no es valido, por favor ingrese un numero mayor a 0 \n");
+		system("pause");
+		system("cls");
+		goto modulo;
+	}
 	num1 = numerovalido;
 	
+	modulo2:
 	printf("Ingrese un otro numero entero para sacar su resto: ");
 	scanf("%s", n2);
 	n=validar_numero(n2);
 	numerovalido=atoi(n2);//Llamada al metodo para la validación
+	if(numerovalido == 0){
+		printf("El numero ingresado no es valido, por favor ingrese un numero mayor a 0 \n");
+		system("pause");
+		system("cls");
+		goto modulo2;
+	}
 	num2 = numerovalido;
 
 	//Lo manda a la dirección asignada y saca la operación

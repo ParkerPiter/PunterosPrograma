@@ -44,21 +44,21 @@ main(){
 					
 			case 2: 
 					resta(&num_resta);
-					printf("El resultado de la suma es: %d \n", num_resta);
+					printf("El resultado de la resta es: %d \n", num_resta);
 					system("pause");
 					system("cls");
 					break;
 			
 			case 3: 
 					division(&num_divi);
-					printf("El resultado de la suma es: %d \n", num_divi);
+					printf("El resultado de la division es: %d \n", num_divi);
 					system("pause");
 					system("cls");
 					break;
 					
 			case 4: 
 					resto(&num_rest);
-					printf("El resultado de la suma es: %d \n", num_rest);
+					printf("El modulo es: %d \n", num_rest);
 					system("pause");
 					system("cls");
 					break;
